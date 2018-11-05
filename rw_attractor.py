@@ -8,9 +8,7 @@ import matplotlib.pyplot as plt
 from scipy.integrate import odeint as ODEint
 import random
 
-
 def attractor(Positions, folder=''):
-
 	# initialisation function: plot the background of each frame
 	def init():
 		for line, pt in zip(lines, pts):
@@ -76,7 +74,6 @@ def attractor(Positions, folder=''):
 	plt.savefig(folder + 'Attractor.eps', format='eps', dpi=1000)
 	print ('Attractor: done.')
 
-
 if __name__ == '__main__':
 
 	Positions = np.array([[220, 220], [220, 225], [220, 230], [220, 235], [220, 240], 
@@ -104,6 +101,4 @@ if __name__ == '__main__':
 	#plt.show()
 
 	attractor(Positions)
-
-
 
